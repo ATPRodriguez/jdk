@@ -136,12 +136,8 @@ en
 /etc/profile.d/java.sh
 ```
 - salida:
-```code
-atprodriguez@atprodriguez-VirtualBox:~$ JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-atprodriguez@atprodriguez-VirtualBox:~$ PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
-atprodriguez@atprodriguez-VirtualBox:~$ export JAVA_HOME
-atprodriguez@atprodriguez-VirtualBox:~$ export JRE_HOME
-atprodriguez@atprodriguez-VirtualBox:~$ export PATH
+```code              
+atprodriguez@atprodriguez-VirtualBox:~/Escritorio/jdk$ sudo nano /etc/profile.d/java.sh
 ```
 Haga que el script sea ejecutable con chmod:
 ```code
@@ -149,9 +145,7 @@ sudo chmod +x /etc/profile.d/java.sh
 ```
 - salida:
 ```code
-atprodriguez@atprodriguez-VirtualBox:~$ sudo chmod +x /etc/profile.d/java.sh
-[sudo] contraseña para atprodriguez:              
-chmod: no se puede acceder a '/etc/profile.d/java.sh': No existe el archivo o el directorio
+atprodriguez@atprodriguez-VirtualBox:~/Escritorio/jdk$ sudo chmod +x /etc/profile.d/java.sh
 ```
 Finalmente, cargue las variables de entorno usando el comando de source
 ```code
@@ -159,8 +153,7 @@ source /etc/profile.d/java.sh
 ```
 - salida: 
 ```code
-atprodriguez@atprodriguez-VirtualBox:~$ source /etc/profile.d/java.sh
-bash: /etc/profile.d/java.sh: No existe el archivo o el directorio
+atprodriguez@atprodriguez-VirtualBox:~/Escritorio/jdk$ source /etc/profile.d/java.sh
 ```
 - Comprobar la versión de Java con:
 ```code
